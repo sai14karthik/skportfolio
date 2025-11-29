@@ -28,4 +28,5 @@ rundown/*.synctex.gz
 # Template folder (not needed in repo)
 jonbarron-template/
 rundown/
+images/
 
