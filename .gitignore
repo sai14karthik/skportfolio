@@ -25,3 +25,6 @@ rundown/*.log
 rundown/*.out
 rundown/*.synctex.gz
 
+# Template folder (not needed in repo)
+jonbarron-template/
+
