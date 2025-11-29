@@ -140,3 +140,57 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+/* Dark Mode Styles */
+body.dark-mode,
+body.dark-mode td,
+body.dark-mode th,
+body.dark-mode tr,
+body.dark-mode p {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .name {
+    color: #ffffff;
+}
+
+body.dark-mode a {
+    color: #4a9eff;
+}
+
+body.dark-mode a:hover,
+body.dark-mode a:focus {
+    color: #ffa64a;
+}
+
+body.dark-mode strong {
+    color: #ffffff;
+}
+
+body.dark-mode em {
+    color: #b0b0b0;
+}
+
+body.dark-mode ul li {
+    color: #e0e0e0;
+}
+
+body.dark-mode span.highlight {
+    background-color: #3a3a2a;
+    color: #ffffd0;
+}
+
+body.dark-mode table {
+    background-color: #1a1a1a;
+}
+
+/* Profile photo placeholder in dark mode */
+body.dark-mode div[style*="background-color:#f0f0f0"] {
+    background-color: #2a2a2a !important;
+    color: #999 !important;
+}

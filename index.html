@@ -58,6 +58,9 @@
   </head>
 
   <body>
+    <div style="text-align:right;padding:10px;max-width:800px;margin:0 auto;">
+      <button id="theme-toggle" style="background:#333;color:#fff;border:none;padding:8px 15px;border-radius:5px;cursor:pointer;font-size:14px;font-family:'Lato',Verdana,Helvetica,sans-serif;">🌙 Dark Mode</button>
+    </div>
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -161,8 +164,8 @@
                   Relevant Coursework: Advanced Artificial Intelligence, Incident Response Technologies, Design and Analysis of Algorithms.
                 </p>
                 <p style="margin-bottom:10px;">
-                  <a href="https://srmap.edu.in" style="margin-left:20px;display:inline-block;">
-                    <img src="images/SRM_University,_Andhra_Pradesh_logo.png" alt="SRM University-AP" style="width:100px;vertical-align:middle;margin-right:15px;display:inline-block;">
+                  <a href="https://srmap.edu.in" style="margin-left:25px;display:inline-block;">
+                    <img src="images/SRM_University,_Andhra_Pradesh_logo.png" alt="SRM University-AP" style="width:100px;vertical-align:middle;margin-right:40px;display:inline-block;">
                   </a>
                   <span style="vertical-align:middle;display:inline-block;">
                     <strong>B.Tech in Computer Science and Engineering (Specialization in AI and ML)</strong><br>
@@ -319,5 +322,42 @@
         </td>
       </tr>
     </table>
+    
+    <script>
+      // Theme toggle functionality
+      const themeToggle = document.getElementById('theme-toggle');
+      const body = document.body;
+      const html = document.documentElement;
+      
+      // Check for saved theme preference or default to light mode
+      const currentTheme = localStorage.getItem('theme') || 'light';
+      
+      // Apply the saved theme
+      if (currentTheme === 'dark') {
+        body.classList.add('dark-mode');
+        html.classList.add('dark-mode');
+        themeToggle.textContent = '☀️ Light Mode';
+        themeToggle.style.background = '#f0f0f0';
+        themeToggle.style.color = '#333';
+      }
+      
+      // Theme toggle button click handler
+      themeToggle.addEventListener('click', function() {
+        body.classList.toggle('dark-mode');
+        html.classList.toggle('dark-mode');
+        
+        if (body.classList.contains('dark-mode')) {
+          localStorage.setItem('theme', 'dark');
+          themeToggle.textContent = '☀️ Light Mode';
+          themeToggle.style.background = '#f0f0f0';
+          themeToggle.style.color = '#333';
+        } else {
+          localStorage.setItem('theme', 'light');
+          themeToggle.textContent = '🌙 Dark Mode';
+          themeToggle.style.background = '#333';
+          themeToggle.style.color = '#fff';
+        }
+      });
+    </script>
   </body>
 </html>
