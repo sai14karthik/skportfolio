@@ -11,40 +11,24 @@ A clean, professional academic portfolio website for Sai Karthik Nallamothu, opt
 - ✅ Easy to host on GitHub Pages
 - ✅ Print-friendly styles
 
-## Deployment to GitHub Pages
+## Deployment Status
 
-### Option 1: Using GitHub Repository (Recommended)
+✅ **Repository Created**: https://github.com/sai14karthik/sai14karthik.github.io  
+✅ **Files Pushed**: All portfolio files have been committed and pushed to the repository
 
-1. **Create a new repository** on GitHub (e.g., `portfolio` or `sai14karthik.github.io`)
+### Enable GitHub Pages
 
-2. **Clone the repository** to your local machine:
-   ```bash
-   git clone https://github.com/yourusername/portfolio.git
-   cd portfolio
-   ```
+Since your repository is named `sai14karthik.github.io`, GitHub Pages should automatically be enabled, but verify:
 
-3. **Copy all files** from this directory to the repository:
-   - `index.html`
-   - `stylesheet.css`
-   - `README.md`
+1. Go to your repository: https://github.com/sai14karthik/sai14karthik.github.io
+2. Click on **Settings** → **Pages**
+3. Under **Source**, ensure it's set to **Deploy from a branch**
+4. Choose **main** branch and **/ (root)** folder
+5. Click **Save**
 
-4. **Commit and push**:
-   ```bash
-   git add .
-   git commit -m "Initial portfolio website"
-   git push origin main
-   ```
+**Your site will be live at**: `https://sai14karthik.github.io/`
 
-5. **Enable GitHub Pages**:
-   - Go to your repository on GitHub
-   - Click on **Settings** → **Pages**
-   - Under **Source**, select **Deploy from a branch**
-   - Choose **main** branch and **/ (root)** folder
-   - Click **Save**
-
-6. **Your site will be live at**:
-   - `https://yourusername.github.io/portfolio/` (if repo is named `portfolio`)
-   - OR `https://yourusername.github.io/` (if repo is named `yourusername.github.io`)
+Note: It may take a few minutes (up to 10 minutes) for GitHub Pages to build and deploy your site after the first push.
 
 ### Option 2: Using GitHub Desktop
 
