@@ -74,6 +74,24 @@ a:hover {
   text-decoration: none;
 }
 
+/* Author name highlighting */
+.author-name {
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+body.dark-mode .author-name {
+  color: #ffd700;
+}
+
+.author-other {
+  color: #1772d0;
+}
+
+body.dark-mode .author-other {
+  color: #ffa64a;
+}
+
 body,
 td,
 th,
