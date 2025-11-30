@@ -83,7 +83,7 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
-                <img src="images/unnamed-4.jpg" alt="Sai Karthik Nallamothu" style="width:100%;max-width:100%;object-fit: cover; border-radius: 5px;" class="hoverZoomLink">
+                <img src="images/myimage.png" alt="Sai Karthik Nallamothu" style="width:100%;max-width:100%;object-fit: cover; border-radius: 5px;" class="hoverZoomLink">
               </td>
             </tr>
           </tbody></table>
@@ -150,7 +150,7 @@
               <td style="padding:8px;width:100%;vertical-align:middle">
                 <p style="margin-bottom:10px;">
                   <a href="https://www.ucf.edu/">
-                    <img src="images/UCF-symbol.jpg" alt="University of Central Florida" style="width:150px;vertical-align:middle;margin-right:15px;display:inline-block;">
+                    <img src="images/University-of-Central-Florida-Logo.png" alt="University of Central Florida" style="width:150px;vertical-align:middle;margin-right:15px;display:inline-block;">
                   </a>
                   <span style="vertical-align:middle;display:inline-block;">
                     <strong>M.S. in Computer and Information Sciences</strong><br>
@@ -313,6 +313,8 @@
                 <br>
                 <p style="text-align:center;font-size:small;">
                   This website is based on <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron's website template</a>.
+                  <br>
+                  Last updated: <span id="last-updated"></span>
                 </p>
               </td>
             </tr>
@@ -376,6 +378,14 @@
           themeToggle.style.background = '#333';
         }
       });
+      
+      // Set last updated date
+      const lastUpdated = document.getElementById('last-updated');
+      if (lastUpdated) {
+        const lastModified = new Date(document.lastModified);
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        lastUpdated.textContent = lastModified.toLocaleDateString('en-US', options);
+      }
     </script>
   </body>
 </html>
